@@ -5,24 +5,18 @@ const btnOne = document.querySelector('#one');
 const btnTwo = document.querySelector('#two');
 
 btnOne.addEventListener('click', first);
-btnTwo.addEventListener('click', noFirst);
+//btnTwo.addEventListener('click', noFirst);
 
 function first() {
-  image.setAttribute("src", "./style/photo2.webp");
-  text.innerHTML = "Did you see all popular places?";
-  btnOne.innerHTML = "Yes!";
-  btnTwo.innerHTML = "No!";
+  image.setAttribute("src", "./style/photo3.jpeg");
+  text.innerHTML = "What would you like to see?";
+  btnOne.innerHTML = "Museum!";
+  btnTwo.innerHTML = "The City!";
 
-  btnOne.addEventListener('click', allPopular);
+  btnOne.addEventListener('click', museum);
   btnTwo.addEventListener('click', notPopular);
 }
 
-function allPopular() {
-  image.setAttribute("src", "./style/photo3.jpeg");
-  text.innerHTML = "Recomendation for your trip";
-  btnOne.innerHTML = "Trip 1!";
-  btnTwo.innerHTML = "Trip 2!";
-
-  btnOne.addEventListener('click', window.open('https://frominwoodout.com/non-touristy-things-to-do-in-nyc/'));
-  btnTwo.addEventListener('click', window.open('https://www.marcofeng.com/usa/best-non-touristy-things-to-do-in-nyc'));
+function museum(){
+  window.open('https://www.tripadvisor.com/Attractions-g60763-Activities-c49-New_York_City_New_York.html');
 }
