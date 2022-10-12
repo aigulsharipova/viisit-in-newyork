@@ -16,3 +16,13 @@ function first() {
   btnOne.addEventListener('click', allPopular);
   btnTwo.addEventListener('click', notPopular);
 }
+
+function allPopular() {
+  image.setAttribute("src", "./style/photo3.jpeg");
+  text.innerHTML = "Recomendation for your trip";
+  btnOne.innerHTML = "Trip 1!";
+  btnTwo.innerHTML = "Trip 2!";
+
+  btnOne.addEventListener('click', window.open('https://frominwoodout.com/non-touristy-things-to-do-in-nyc/'));
+  btnTwo.addEventListener('click', window.open('https://www.marcofeng.com/usa/best-non-touristy-things-to-do-in-nyc'));
+}
