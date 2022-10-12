@@ -14,9 +14,13 @@ function first() {
   btnTwo.innerHTML = "The City!";
 
   btnOne.addEventListener('click', museum);
-  btnTwo.addEventListener('click', notPopular);
+  btnTwo.addEventListener('click', theCity);
 }
 
 function museum(){
   window.open('https://www.tripadvisor.com/Attractions-g60763-Activities-c49-New_York_City_New_York.html');
+}
+
+function theCity(){
+  window.open('https://www.10adventures.com/city-walks/new-york-city/');
 }
