@@ -5,7 +5,7 @@ const btnOne = document.querySelector('#one');
 const btnTwo = document.querySelector('#two');
 
 btnOne.addEventListener('click', first);
-//btnTwo.addEventListener('click', noFirst);
+btnTwo.addEventListener('click', noFirst);
 
 function first() {
   image.setAttribute("src", "./style/photo3.jpeg");
@@ -24,3 +24,29 @@ function museum(){
 function theCity(){
   window.open('https://www.10adventures.com/city-walks/new-york-city/');
 }
+
+
+function noFirst() {
+  image.setAttribute("src", "./style/photo2.webp");
+  text.innerHTML = "Did you see all popular places?";
+  btnOne.innerHTML = "Yes!";
+  btnTwo.innerHTML = "No!";
+
+  btnOne.addEventListener('click', allPopular);
+  btnTwo.addEventListener('click', notPopular);
+}
+
+function allPopular() {
+  image.setAttribute("src", "./style/photo3.jpeg");
+  text.innerHTML = "Recomendation for your trip";
+  btnOne.innerHTML = "Trip 1!";
+  btnTwo.innerHTML = "Trip 2!";
+
+  btnOne.addEventListener('click', tripOne);
+  btnTwo.addEventListener('click', tripTwo);}
+
+function tripOne(){
+  window.open('https://frominwoodout.com/non-touristy-things-to-do-in-nyc/');}
+
+function tripTwo(){
+  window.open('https://www.marcofeng.com/usa/best-non-touristy-things-to-do-in-nyc');}
