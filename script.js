@@ -52,3 +52,13 @@ function tripOne(){
 function tripTwo(){
   window.open('https://frominwoodout.com/non-touristy-things-to-do-in-nyc/');
 }
+
+function notPopular() {
+  image.setAttribute("src", "./style/photo5.jpeg");
+  text.innerHTML = "What would you like to see?";
+  btnOne.innerHTML = "Museum!";
+  btnTwo.innerHTML = "The City!";
+
+  btnOne.addEventListener('click', museum);
+  btnTwo.addEventListener('click', theCity);
+}
