@@ -46,11 +46,11 @@ function allPopular() {
 }
 
 function tripOne(){
-  window.open('https://www.marcofeng.com/usa/best-non-touristy-things-to-do-in-nyc');
+  window.open('https://www.tripsavvy.com/things-not-to-do-in-nyc-1613664');
 }
 
 function tripTwo(){
-  window.open('https://frominwoodout.com/non-touristy-things-to-do-in-nyc/');
+  window.open('https://www.marcofeng.com/usa/best-non-touristy-things-to-do-in-nyc');
 }
 
 function notPopular() {
