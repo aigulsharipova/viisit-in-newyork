@@ -18,11 +18,11 @@ function first() {
 }
 
 function museum(){
-  window.open('https://www.tripadvisor.com/Attractions-g60763-Activities-c49-New_York_City_New_York.html');
+window.open('https://www.tripadvisor.com/Attractions-g60763-Activities-c49-New_York_City_New_York.html');
 }
 
 function theCity(){
-  window.open('https://www.10adventures.com/city-walks/new-york-city/');
+window.open('https://www.10adventures.com/city-walks/new-york-city/');
 }
 
 function noFirst() {
