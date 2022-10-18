@@ -41,6 +41,8 @@ function allPopular() {
   btnOne.innerHTML = "Trip 1!";
   btnTwo.innerHTML = "Trip 2!";
 
+  btnOne.removeEventListener('click', museum);
+  btnTwo.removeEventListener('click', theCity);
   btnOne.addEventListener('click', tripOne);
   btnTwo.addEventListener('click', tripTwo);
 }
